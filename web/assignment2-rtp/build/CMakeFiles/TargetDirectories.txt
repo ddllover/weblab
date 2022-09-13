@@ -1,0 +1,6 @@
+/mnt/c/Users/Lenovo/Desktop/Linux/assignment2-rtp/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Lenovo/Desktop/Linux/assignment2-rtp/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Lenovo/Desktop/Linux/assignment2-rtp/build/CMakeFiles/op_sender.dir
+/mnt/c/Users/Lenovo/Desktop/Linux/assignment2-rtp/build/CMakeFiles/op_receiver.dir
+/mnt/c/Users/Lenovo/Desktop/Linux/assignment2-rtp/build/CMakeFiles/sender.dir
+/mnt/c/Users/Lenovo/Desktop/Linux/assignment2-rtp/build/CMakeFiles/receiver.dir

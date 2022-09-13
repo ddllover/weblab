@@ -1,0 +1,22 @@
+  dest: 1, next: 2, cost: 36
+  dest: 2, next: 2, cost: 21
+  dest: 3, next: 6, cost: 146
+  dest: 4, next: 6, cost: 85
+  dest: 5, next: 5, cost: 0
+  dest: 6, next: 6, cost: 53
+  dest: 7, next: 6, cost: 159
+  dest: 9, next: 6, cost: 134
+  dest: 10, next: 6, cost: 117
+  dest: 12, next: 6, cost: 143
+
+  dest: 3, next: 3, cost: 12
+  dest: 7, next: 7, cost: 25
+  dest: 9, next: 9, cost: 0
+  dest: 10, next: 10, cost: 17
+  dest: 12, next: 12, cost: 9
+
+  dest: 3, next: 9, cost: 50
+  dest: 7, next: 9, cost: 42
+  dest: 9, next: 9, cost: 17
+  dest: 10, next: 10, cost: 0
+  dest: 12, next: 9, cost: 26
