@@ -43,3 +43,38 @@ current window. In this way, packet 0 having a timeout would not necessarily
 result in a retransmission of packets 1 and 2.
 
 # lab3
+In this assignment, you will implement the distance vector routing protocol.
+## Protocol Description
+### Router location file
+The router location file maps a unique router ID to a router process. Each router is
+defined by a 3-tuple:`<router IP,router port,router id>`
+Each router is assigned a unique identifier router id. It runs on IP router IP,
+and listens on port router port for two pieces of information: (i) commands from the
+agent and (ii) messages from other routers.
+### Topology configuration file
+The topology configuration file specifies the router topology. Here, the distance between
+two neighboring routers is unidirectional, i.e., the distance from router 1 to router 2 may
+be different from the distance from router 2 to router 1. The topology configuration
+file is a text file composed of a number of topology tuples. The format of a topology
+tuple is shown below:`<RouterID1,RouterID2,weight>`
+## The router program
+`.router <router location file> <topology conf file> <router id>`
+## The agent program
+|Name|Example of commands|Description|
+|----|----|----|
+|dv|dv|All routers are triggered to propagate distance vectors to neighboring routers until
+the link costs become stable|
+|update|update:1,6,4|Change the link weight of link (1,6) to 4. If
+the link weight is -1, then it means that the
+link is deleted. If the link is absent before,
+then it means that the link is added with
+the update command|
+|show|show:2|Display the routing table of router 2.|
+|reset|reset:2|Reset the number of distance vectors of
+router 2 to zero. This helps us easily debug your assignment|
+
+`.agent <router location file>`
+
+## Protocol Messages
+* Messages between the agent and a router.
+* Messages between two routers
